@@ -37,7 +37,7 @@ export const bootstrap = async ()=>{
 
 
    const server= app.listen(process.env.PORT,()=>{ 
-        console.log(`server run on ${process.env.PORT}!`);
+        console.log(`server runs on ${process.env.PORT}!`);
         
     })
     const io = new Server(server,{
