@@ -47,10 +47,10 @@ import fs from 'fs';
 import { v4 as uuidv4 } from 'uuid'
 
 export const multerLocal =(destinationPath='general',allowedExtentions=[])=>{
-  const destinationFolder =`Assets/${destinationPath}`
-  if(!fs.existsSync(destinationFolder)){
-    fs.mkdirSync(destinationFolder,{recursive:true})
-  }
+  // const destinationFolder =`Assets/${destinationPath}`
+  // if(!fs.existsSync(destinationFolder)){
+  //   fs.mkdirSync(destinationFolder,{recursive:true})
+  // }
 
   const storage = multer.diskStorage({
   

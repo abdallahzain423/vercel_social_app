@@ -5,7 +5,9 @@ export const postRouter = Router({
     strict: true
 })
 import * as postServices from './services/post.services.js'
-import { authenticationMiddleware, checkIfUserExist, errorhandellerMiddleware, multerHost } from "../../middlewares/index.js";
+import { authenticationMiddleware, checkIfUserExist, errorhandellerMiddleware,
+     multerHost 
+    } from "../../middlewares/index.js";
 import { ImageExtentions } from "../../constants/constant.js";
 
 postRouter.post('/create',

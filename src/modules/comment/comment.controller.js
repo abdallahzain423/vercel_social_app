@@ -3,9 +3,11 @@
 import { Router } from "express";
 
 export const commentRouter = Router()
-import * as commentServices from './services/comment.services.js'
+import * as commentServices from './services/comment.services.js'  
 
-import { checkIfUserExist,authenticationMiddleware,errorhandellerMiddleware, multerHost  } from "../../middlewares/index.js";
+import { checkIfUserExist,authenticationMiddleware,errorhandellerMiddleware,
+     multerHost  
+     } from "../../middlewares/index.js";
 
 import { ImageExtentions } from "../../constants/constant.js";
 

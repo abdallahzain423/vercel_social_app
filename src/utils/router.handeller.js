@@ -31,7 +31,9 @@ app.use(express.json())
     app.use(helmet())
     
 
-
+app.get('/',(req,res)=>{ 
+    res.status(200).json({msg:'welcome to social media app'})
+})
 
     app.use(globalHandeller)
 }
